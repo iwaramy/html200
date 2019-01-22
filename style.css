@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-kerning: normal;
+  line-height: 1.6;
+}
+.content-box {
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.sidebar-box {
+  width: 40%;
+  position: relative;
+  float: right;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+footer {
+  background-color: #263E5F;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  font-kerning: normal;
+  line-height: 1.6;
+  padding: 4rem;
+}
+header {
+  background: url('adopt-a-dog/images/christopher-harris-57366-unsplash.jpg') no-repeat 0 -80px;
+  color: white;
+  position: relative;
+}
+ul.container {
+  background-color: lightgray;
+  padding: 25px;
+  color: black;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+h4 {
+  font-size: 20px;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+  font-style: italic;
+}
+a {
+    text-decoration-line: none;
+    color: #00a3cc;
+}
+ul li {
+  display: inline;
+  list-style-type: none;
+  font-weight: bold;
+}
+.clearfix::after {
+content: "";
+display: block;
+clear: both;
+}
+li:after {
+  content: " / ";
+}
+li:last-child:after {
+    content: " ";
+  }
+img.sidebar-box {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    }
+.color {
+  color: #00a3cc;
+}
+p.color {
+  font-size: 20px;
+}
