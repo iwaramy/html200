@@ -1,88 +1,288 @@
-* {
-  box-sizing: border-box;
-}
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-kerning: normal;
-  line-height: 1.6;
+  font-family: 'Arial';
+  font-size: 1.2em;
 }
-.content-box {
-  width: 50%;
-  position: relative;
-  float: left;
+
+header {
+  background-image: url("../adopt-a-dog/images/christopher-harris-57366-unsplash.jpg");
+  height: 37rem;
+  max-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.sidebar-box {
-  width: 40%;
-  position: relative;
+
+.flexbox {
+  display: flex;
+}
+
+.left-side {
+  flex: 50%;
+  margin-left: 150px;
+  padding: 5px 0px 5px 0px;
+}
+
+.left-side > img {
+  margin-top: 60px;
+}
+
+.left-side > h1 {
+  color:#92B64C;
+  font-style: italic;
+  margin: 0;
+}
+
+.right-side {
+  flex: 50%;
   float: right;
+  margin-right: 70px;
+  color: white;
 }
-.container {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 1rem;
+
+.cart {
+  margin-left: 482px;
+  margin-top: 102px;
+
+  padding-right: 10px;
+}
+
+.cart-total {
+  color: white;
+  margin-left: 550px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.right-side > button {
+  color: white;
+  background-color:#92B64C;
+  width: 20%;
+  border: none;
+  margin-left: 470px;
+  margin-top: 10px;
+}
+
+.nav-container {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  background-color:#EBEBEB;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+nav {
+  margin: 0px 250px;
+}
+
+nav > a {
+  padding: 10px;
+  color:#263E5F;
+  text-decoration: none;
+}
+
+main {
+  background-color: white;
+}
+
+.flex-container {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  font-family:sans-serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.left-column {
+  flex: 30%;
+  margin-left: 250px;
+  padding: 15px 0px 5px 0px;
+}
+
+.right-column {
+  flex: 70%;
+  margin-right: 250px;
+  padding-left: 70px;
+  font-size: 1.5rem;
+}
+
+.right-column h1 {
+  color:#263E5F;
+}
+
+.right-column p {
+  color: black;
+  margin-right: 20px;
+  font-weight: lighter;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.grid-container > div {
+  text-align: justify;
+  padding: 20px 0;
+  font-size: 30px;
+  border: black;
+}
+
+h5 {
+  margin: 0;
+}
+
+.grid-container p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color:#92B64C;
+  border-radius: .2rem;
+  width: 100%;
+  padding: 7px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.see > button {
+  background-color:#92B64C;
+  text-align: center;
+  width: 15%;
+  padding: 15px;
+  color: rgb(9, 60, 96);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  border: none;
+  display: block;
+  margin: 30px auto 170px auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-left: 250px;
+  color:#263E5F;
+}
+
+.flex-container2 {
+  display: flex;
+}
+
+.left-column2 {
+  margin-left: 250px;
+}
+
+.right-column2 > h3 {
+  color:#263E5F;
+  margin-left: 35px;
+  margin-top: 35px;
+  margin-bottom: 0;
+  font-size: 1.9rem;
+}
+
+.right-column2 > p {
+  margin-right: 250px;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-left: 35px;
+  line-height: 2rem;
+}
+
+.left-column2 > img {
+  margin-top: 4px;
+  padding: 25px 25px 25px 0;
+}
+
+
+
+label {
+  color:#263E5F;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 20px 20px 0;
+  margin-left: 250px;
+}
+
+input[type=text], input[type=email] {
+  padding: 20px;
+  margin: 20px 0px 20px 250px;
+  width: 20%;
+}
+
+.move-left {
+  margin-left: 455px;
+}
+
+.move-left2 {
+  margin-left: 250px;
+}
+
+select {
+  margin-left: 100px;
+  padding: 20px;
+  width: 10%;
+}
+
+#zip-code {
+  margin-left: 140px;
+  padding: 20px;
+  width: 10%;
+}
+
+input[type=submit] {
+  background-color:#92B64C;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 15%;
+  height: 50px;
+  border: none;
+  padding: 0;
+}
+
+.radio-button {
+  margin: 30px 0 10px 250px;
+}
+
+.place > select {
+  margin-left: 250px;
+  margin-top: 20px;
+  padding: 20px;
+  width: 20%;
+}
+
+form > p {
+  margin: 30px 0 0 250px;
+  font-size: 1.3rem;
 }
 footer {
-  background-color: #263E5F;
-  color: white;
+  background-color:#263E5F;
+}
+
+.footer-container {
+  width: 35%;
+  padding: 100px 0px;
+  margin: auto;
   text-align: center;
-  position: relative;
-  font-size: 14px;
-  font-kerning: normal;
-  line-height: 1.6;
-  padding: 4rem;
-}
-header {
-  background: url('adopt-a-dog/images/christopher-harris-57366-unsplash.jpg') no-repeat 0 -80px;
+  font-family:sans-serif;
+  line-height: 200%;
+  font-size: 1.2rem;
   color: white;
-  position: relative;
-}
-ul.container {
-  background-color: lightgray;
-  padding: 25px;
-  color: black;
-  width: 100%;
-  position: relative;
-  float: left;
-}
-h4 {
-  font-size: 20px;
-}
-h1 {
-  font-size: 50px;
-}
-h2 {
-  font-size: 30px;
-  font-style: italic;
-}
-a {
-    text-decoration-line: none;
-    color: #00a3cc;
-}
-ul li {
-  display: inline;
-  list-style-type: none;
-  font-weight: bold;
-}
-.clearfix::after {
-content: "";
-display: block;
-clear: both;
-}
-li:after {
-  content: " / ";
-}
-li:last-child:after {
-    content: " ";
   }
-img.sidebar-box {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    }
-.color {
-  color: #00a3cc;
+
+.footer-container > p {
+  padding: 0 50px 0 50px;
 }
-p.color {
-  font-size: 20px;
+
+.footer-container > a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
 }
