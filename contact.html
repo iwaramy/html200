@@ -1,102 +1,92 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>adopt-a-dog</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta charset="UTF-8">
+  <title>Adoptdog.com</title>
 </head>
 <body>
-    <header>
-      <div class="clearfix">
-      <div class="container">
-        <img src="adopt-a-dog/adoptadog-logo.svg" alt="dog Logo Company">
-        <h2>Seattle’s premiere dog adoption agency</h2>
+  <header>
+    <div class="flexbox">
+      <div class="left-side">
+        <img src="adopt-a-dog/adoptadog-logo.svg" alt="logo" width="600">
+        <h1>Seattle’s premiere dog adoption agency</h1>
       </div>
-      <div class="container">
-        <nav>
-          <ul class="container">
-            <li>Home</li>
-            <li>Dogs</li>
-            <li>Blog</li>
-          </ul>
-        </nav>
+      <div class="right-side">
+        <img class="cart" src="adopt-a-dog/cart-icon.svg" alt="cart image" width="60" height="60">
+        $1234.56
+        <br>
+        <button type="button">Checkout</button>
       </div>
+    </div>
+  </header>
+  <div class="nav-container">
+    <nav>
+      <a href="index.html">Home</a> /
+      <a href="dogs.html">Dogs</a> /
+      <a href="blogs.html">Blog</a>
+    </nav>
+  </div>
+  <main>
+    <h2>Checkout</h2>
+    <form action="#">
+      <label>Name</label><br>
+        <input type="text" name="firstname">
+      <br>
+      <label>Email Address</label><br>
+      <input type="email" name="user-email">
+      <br>
+      <label>Street Address</label><br>
+      <input type="text" name="address">
+      <br>
+      <label>City</label>
+      <label class="move-left">State</label>
+      <label class="move-left2">Zip code</label>
+      <br>
+      <input type="text" name="name">
+      <select name="state">
+        <option value="--"> --</option>
+        <option value="name"> Washington</option>
+        <option value="name"> Texas</option>
+        <option value="name"> Newyork</option>
+      </select>
+      <input type="text" name="zip" id="zip-code">
+      <br>
+      <label>First Time Adopter?</label><br>
+      <div class="radio-button">
+        <input type="radio" name="yes" value="text"> Yes
+        <input type="radio" name="no" value="text"> No
       </div>
-    </header>
-    <main>
-      <div class="clearfix">
-      <div class="container">
-
-        <article class="content-box">
-         <h3>Adopt A Dog</h3>
-          <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga.
-            Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut
-            es ut alitatuscit ommossum haritatur arum qui of cae videbiti corporeium faccull oribus es quidignis ipietus explam sus
-am aut amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi gendand itatquos as magnimpor aut molor autatia ad est of cimus accae et omnia cus, od qui ate</p>
-
-          </p>
-          <h3>Murphy</h3>
-           <p>Cost to Adopt: $123.45 <br>
-Corrum volorit iandae nimaxim cum restia
-volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-           </p>
-
-           <h3>Poppy</h3>
-            <p>Cost to Adopt: $123.45 <br>
-Corrum volorit iandae nimaxim cum restia
-volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-            </p>
-
-           <h3>Jack</h3>
-            <p>Cost to Adopt: $123.45 <br>
-Corrum volorit iandae nimaxim cum restia
-volor reicid ut et etur sunt arum rendae pla endis re ea erum, qui doluptae
-            </p>
-        </article>
-        <article class="content-box">
-          <h4>Duffy</h4>
-Cost to Adopt: $123.45<br>
-Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum
-rendae pla endis re ea erum, qui doluptae
-</p>
-
-<h4>Lucas</h4>
-Cost to Adopt: $123.45<br>
-Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum
-rendae pla endis re ea erum, qui doluptae
-</p>
-
-<h4>Jake</h4>
-Cost to Adopt: $123.45<br>
-Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum
-rendae pla endis re ea erum, qui doluptae
-</p>
-
-<h4>Angus</h4>
-Cost to Adopt: $123.45<br>
-Corrum volorit iandae nimaxim cum restia volor reicid ut et etur sunt arum
-rendae pla endis re ea erum, qui doluptae
-</p>
-
-        </article>
-     </div>
-      </div>
-
-    </main>
-    <footer>
-      <div class="clearfix">
-      <div class="container">
-        <img src="adopt-a-dog/adoptadog-logo.svg" alt="dog Logo Company">
-        <p>Aborpos nisto inci tet aut que volupti beruptiberro
-          to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-            <ul class="nav-links">
-            <li>Home</li>
-            <li>Dogs</li>
-            <li>Contact</li>
-          </ul>
-      </div>
-          <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-      </div>
-    </footer>
+      <br>
+      <label>Pick Up Location</label><br>
+        <div class="place">
+          <select name="place">
+            <option value="--"> --</option>
+            <option value="name"> Seattle</option>
+            <option value="name"> Lynwood</option>
+            <option value="name"> Tacoma</option>
+            <option value="name"> Arlington</option>
+            <option value="name"> Newyork, NW</option>
+            <option value="name"> Airmont</option>
+            <option value="name"> Akins Corners</option>
+          </select>
+        </div>
+      <br>
+      <label>Total Adoption Cost</label><br>
+      <p>$1234.56<p>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <br><br><br><br><br><br><br>
+  <footer>
+    <div class="footer-container">
+      <img src="adopt-a-dog/adoptadog-logo.svg" alt="logo" width="500">
+      <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+      <a href="index.html">Home</a> /
+      <a href="dogs.html">Dogs</a> /
+      <a href="contact.html">Contact</a>
+      <p>© 2018 Adoptadog, LLC | Seattle WA</p>
+    </div>
+  </footer>
 </body>
 </html>
