@@ -56,9 +56,9 @@ header {
   color: white;
   background-color:#92B64C;
   width: 20%;
-  border: none;
   margin-left: 470px;
-  margin-top: 10px;
+  border: none;
+  margin-top: 11px;
 }
 
 .nav-container {
@@ -68,14 +68,15 @@ header {
   font-size: 1.3em;
 }
 
-nav {
-  margin: 0px 250px;
-}
 
 nav > a {
   padding: 10px;
   color:#263E5F;
   text-decoration: none;
+}
+
+nav {
+  margin: 0px 250px;
 }
 
 main {
