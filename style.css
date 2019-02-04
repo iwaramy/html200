@@ -15,7 +15,11 @@ header {
   display: flex;
 }
 
-
+.left-side {
+  flex: 50%;
+  margin-left: 150px;
+  padding: 5px 0px 5px 0px;
+}
 
 .left-side > img {
   margin-top: 60px;
