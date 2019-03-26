@@ -175,6 +175,56 @@ main {
   color: black;
 }
 
+.left-side > h1 {
+  font-family: 'Noto Serif SC', serif;
+  color: rgb(129,183,65);
+  font-style: italic;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.right-side {
+  flex: 50%;
+  float: right;
+  margin-right: 5%;
+  color: white;
+  padding: 1% 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.column-left {
+  max-width: 100%;
+  min-width: 5%;
+  margin-left: 67%;
+  margin-top: 8%;
+}
+
+.column-right {
+  margin-top: 10%;
+  padding-left: 1%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav {
+  margin: 0 13%;
+}
+
+nav > a {
+  padding: 1%;
+  color: rgb(9,60,96);
+  text-decoration: none;
+}
+
+nav > .active, a:hover {
+background-color: #F90825;
+color: white;
+}
+
+
 @media screen and (max-width: 1023px){
   .right-column {
     display: none;
